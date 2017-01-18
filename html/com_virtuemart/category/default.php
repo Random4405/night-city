@@ -48,7 +48,7 @@ vmJsApi::addJScript('vm.hover',$js);
 
 if (empty($this->keyword) and !empty($this->category)) {
 	?>
-<div class="category_description 123">
+<div class="category_description">
 	<?php echo $this->category->category_description; ?>
 </div>
 <?php
