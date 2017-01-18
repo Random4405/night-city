@@ -38,7 +38,7 @@ $verticalseparator = " vertical-separator";
 
 <div class="category-view">
 
-<?php 
+<?php
 
 // Start the Output
     foreach ( $categories as $category ) {
@@ -68,10 +68,10 @@ $verticalseparator = " vertical-separator";
       <div class="spacer">
         <h2>
           <a href="<?php echo $caturl ?>" title="<?php echo vmText::_($category->category_name) ?>">
-          <?php echo vmText::_($category->category_name) ?>
-          <br />
+          <div class="custom_category_name"><?php echo vmText::_($category->category_name) ?></div>
           <?php // if ($category->ids) {
-            echo $category->images[0]->displayMediaThumb("",false);
+            echo $category->images[0]->displayMediaFull("",false);
+            // if(isset($category->images[1])) { echo $category->images[1]->displayMediaFull("",false); }
           //} ?>
           </a>
         </h2>
