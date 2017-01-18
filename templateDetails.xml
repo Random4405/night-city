@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="template">
+	<name>high-city</name>
+	<creationDate>2017-02-11</creationDate>
+	<author>L.N</author>
+	<authorEmail>lazynick7@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<copyright>All rights reserved.</copyright>
+	<license>Commercial</license>
+	<version>1.0</version>
+	<description>Шаблон для сайта "Высокий Город", сделано L.N</description>
+	<files>
+ 		<filename>index.php</filename>
+ 		<filename>templateDetails.xml</filename>
+ 		<folder>images</folder>
+ 		<folder>css</folder>
+ 		<folder>js</folder>
+	</files>
+	<positions>
+		<position>header</position>
+		<position>header-menu</position>
+		<position>intro</position>
+		<position>advantages</position>
+		<position>income</position>
+		<position>form</position>
+		<position>left-sidebar</position>
+		<position>pre-content</position>
+	</positions>
+</extension>
