@@ -68,7 +68,9 @@ $verticalseparator = " vertical-separator";
       <div class="spacer">
         <h2>
           <a href="<?php echo $caturl ?>" title="<?php echo vmText::_($category->category_name) ?>">
-          <div class="custom_category_name"><?php echo vmText::_($category->category_name) ?></div>
+          <div class="custom_highlight_block">
+            <div class="custom_category_name"><?php echo vmText::_($category->category_name) ?></div>
+          </div>
           <?php // if ($category->ids) {
             echo $category->images[0]->displayMediaFull("",false);
             // if(isset($category->images[1])) { echo $category->images[1]->displayMediaFull("",false); }

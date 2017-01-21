@@ -2,63 +2,56 @@
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
 
-
-
-
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
+@media only screen and (min-width: 320px) {}
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
+@media only screen and (min-width: 480px) {}
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
+@media only screen and (min-width: 768px) {}
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
+@media only screen and (min-width: 992px) {}
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
-}
-
-
+@media only screen and (min-width: 1200px) {}
 
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 86%;
+  }
 
-  .content .intro .intro__links-menu ul li {
-    width: 155px;
-    padding-left: 15px;
-    a {
+  .content {
+    .intro {
+      height: 770px;
+
+      .intro__links-menu ul li {
+        width: 155px;
+        padding-left: 8px;
+      }
+    }
+
+    .moduletable_income .income .income_wrapper--text .income_wrapper__header {
+      font-weight: 300;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
     }
   }
-
-  .content .moduletable_income .income .income_wrapper--text .income_wrapper__header {
-    font-weight: 300;
-    padding-bottom: 15px;
-    margin-bottom: 30px;
-  }
-
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 62%;
+  }
 
   .header-main {
-
     .main-logo {
       width: 33%;
     }
@@ -69,9 +62,9 @@
 
     .header-contacts {
       padding-top: 10px;
+
       .header-contacts__phone {
-        a {
-        }
+        a {}
       }
 
       .header-contacts__button {
@@ -83,14 +76,13 @@
     .header-menu .moduletable_menu {
       padding: 0 30px;
     }
-
   }
 
   .content .intro {
     padding-top: 100px;
     height: 554px;
-    .intro__text {
-    }
+
+    .intro__text {}
   }
 
   .intro--background {
@@ -98,17 +90,30 @@
   }
 
   .content .intro .intro__links-menu ul li {
-    width: 118px;
+    width: 16%;
     height: 271px;
     padding-left: 6px;
     margin-top: 0;
+
     .img-wrapper {
       height: 163px;
       position: relative;
       margin-bottom: 30px;
     }
-    a {
-    }
+
+    a {}
+  }
+
+  .moduletable_advantages {
+    margin-bottom: 80px;
+  }
+
+  .moduletable_income .income .income_wrapper {
+    height: 254px;
+  }
+
+  .moduletable_question {
+    height: 247px;
   }
 
   .content .moduletable_income .income .income_wrapper--text .income_wrapper__header {
@@ -117,21 +122,47 @@
     margin-bottom: 30px;
   }
 
-  .content .moduletable_income .income .income_wrapper--text p {
-  }
+  .content .moduletable_income .income .income_wrapper--text p {}
 
   .content .moduletable_question .qlform_question fieldset input {
     width: 230px;
   }
 
+  footer .footer__contacts,
+  footer .google_map {
+    height: 340px;
+  }
+
+  footer .footer__contacts .footer__contacts--title {
+    font-size: 2.56rem;
+    line-height: 30px;
+  }
+
+  footer .footer__contacts p {
+    color: #f3f6f7;
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
+
+  footer .copyright {
+    font-size: 1.7rem;
+    padding: 4% 0 0 5%;
+  }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .intro__links-menu {
+    margin-top: 8%;
+  }
 
   .header-main .main-logo {
     width: 38%;
-    padding: 10px
+    padding: 10px;
   }
 
   .header-main .header-text {
@@ -143,6 +174,7 @@
 
   .header-main .header-contacts {
     padding: 10px 15px 15px 0;
+
     p, button {
       display: inline-block;
       margin-left: 15px;
@@ -155,10 +187,6 @@
     }
   }
 
-  .header-main .header-menu {
-    height: 32px;
-  }
-
   .content .intro .intro__text {
     text-align: center;
     width: 100%;
@@ -166,16 +194,17 @@
 
   .content .intro .intro__links-menu ul li {
     width: 118px;
-    height: 242px;
+    height: 251px;
     padding-left: 6px;
     margin-top: 0;
+
     .img-wrapper {
-      height: 151px;
+      height: 149px;
       position: relative;
       margin-bottom: 30px;
     }
-    a {
-    }
+
+    a {}
   }
 
   .content .moduletable_advantages .advantages ul li {
@@ -194,36 +223,44 @@
   }
 
   .content .moduletable_question h3 {
-   margin-bottom: -13px;
+    margin-bottom: 2%;
   }
 
-  .content .moduletable_income .income .income_wrapper--text p {
+  .moduletable_question .qlform_question form {
+    margin: 0 auto;
+    width: 100%;
   }
 
   .content .moduletable_question .qlform_question fieldset input {
-    width: 138px;
+    width: 100%;
+  }
+
+  .form_question {
+    form {
+      margin: 0 auto;
+      width: 970px;
+    }
   }
 
   footer .footer__contacts {
     padding: 25px 0 0 25px;
     background-color: #545553;
-    height: 427px;
     font-family: Oswald;
     font-weight: 300;
   }
 
-footer .copyright {
-  padding: 15px 0 0 25px;
-}
+  footer .copyright {
+    padding: 15px 0 0 25px;
+  }
 
+  footer .footer__contacts,
+  footer .google_map {
+    height: 263px;
+  }
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-
-}
+@media only screen and (max-width: 480px) {}
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-
-}
+@media only screen and (max-width: 320px) {}
