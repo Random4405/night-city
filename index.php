@@ -45,11 +45,21 @@ defined('_JEXEC') or die;
       <div class="container">
         <div class="row">
           <jdoc:include type="modules" name="intro" style="xhtml" />
-          <jdoc:include type="modules" name="advantages" style="xhtml" />
-          <jdoc:include type="modules" name="income" style="xhtml" />
         </div>
       </div>
     </section>
+      <div class="container">
+        <div class="row">
+          <jdoc:include type="modules" name="advantages" style="xhtml" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <jdoc:include type="modules" name="income" style="xhtml" />
+        </div>
+      </div>
+
+
 
     <section class="main-content-section">
       <div class="container clearfix">
