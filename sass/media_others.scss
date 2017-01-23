@@ -23,36 +23,48 @@
   max-height: 100%;
 }
 
+.category .spacer {
+  margin-top: 15px !important;
+  margin-bottom: 15px !important;
+}
+
 .custom_highlight_block {
   width: 94%;
   height: 91%;
   margin: 2%;
   position: absolute;
   z-index: 5;
+  border: 7px solid transparent;
   &:hover {
     border: 7px solid #ffffff;
     background-color: rgba(141, 196, 231, 0.8);
+    > .custom_category_name {
+      text-decoration: none;
+    }
   }
+}
+
+.orderby-displaynumber {
+  display: none;
 }
 
 .custom_category_name {
   position: absolute;
   z-index: 6;
-  bottom: 39px;
-  left: 49px;
+  bottom: 6%;
+  left: 6%;
   color: #ffffff;
   font-family: Oswald;
   font-size: 25px;
   text-decoration: underline;
   font-weight: 700;
-  &:hover {
-    text-decoration: none;
-  }
 }
 
-img.custom_subcategory {
-  max-width: 100%;
-  max-height: 100%;
+img.custom_category_icon {
+  position: absolute;
+  z-index: 6;
+  left: 6%;
+  bottom: 25%;
 }
 
 /*==========  Non-Mobile First Method  ==========*/

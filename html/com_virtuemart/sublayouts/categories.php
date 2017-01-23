@@ -45,7 +45,7 @@ $verticalseparator = " vertical-separator";
 
 	    // Show the horizontal seperator
 	    if ($iCol == 1 && $iCategory > $categories_per_row) { ?>
-	    <div class="horizontal-separator"></div>
+	    <!-- <div class="horizontal-separator"></div> -->
 	    <?php }
 
 	    // this is an indicator wether a row needs to be opened or not
@@ -64,25 +64,34 @@ $verticalseparator = " vertical-separator";
         $caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=' . $category->virtuemart_category_id , FALSE);
 
           // Show Category ?>
-    <div class="category floatleft<?php echo $category_cellwidth . $show_vertical_separator ?>">
+    <div class="category col-sm-12 col-md-6 floatleft<?php echo $category_cellwidth . $show_vertical_separator ?>">
       <div class="spacer">
         <h2>
           <a href="<?php echo $caturl ?>" title="<?php echo vmText::_($category->category_name) ?>">
-            <div>
+            <div class="custom_highlight_block">
               <?php
-                $suka = array("ГСО",
+                $names = array("ГСО",
                                "Лабораторная посуда",
                                "Питательные среды",
                                "Стандарт титры",
                                "Тесты для контроля стерилизации",
-                               "Химические реактивы");
-                for ($i = 1; $i <= 6; $i++) {
-                  if (suka[1]) { echo "123" }
-                }
+                               "Химические реактивы"
+                              );
+                $links_of_icons = array("http://" . $_SERVER['SERVER_NAME'] . "/images/icon-gso.png",
+                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-lab.png",
+                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-pit.png",
+                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-sta.png",
+                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-tes.png",
+                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-him.png",
+                                       );
               ?>
+               <?php for ($i = 1; $i <= 6; $i++) {
+                  if ($names[$i-1] == $category->category_name) {
+                    echo "<img src='" . $links_of_icons[$i-1] . "' class='custom_category_icon'>";
+                  }
+                } ?>
+              <div class="custom_category_name"><?php echo vmText::_($category->category_name) ?></div>
             </div>
-            <div class="custom_highlight_block"></div>
-            <div class="custom_category_name"><?php echo vmText::_($category->category_name) ?></div>
             <?php // if ($category->ids) {
               echo $category->images[0]->displayMediaFull("",false);
               // if(isset($category->images[1])) { echo $category->images[1]->displayMediaFull("",false); }
