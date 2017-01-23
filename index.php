@@ -67,7 +67,7 @@ defined('_JEXEC') or die;
           <div class="left-sidebar">
             <jdoc:include type="modules" name="left-sidebar" style="xhtml" />
           </div>
-          <div class="main-content-wrap">
+          <div class="main-content-wrap w75">
             <div class="pre-main-content">
               <jdoc:include type="modules" name="pre-content" style="xhtml" />
             </div>

@@ -36,6 +36,8 @@ $category_cellwidth = ' width'.floor ( 100 / $categories_per_row );
 $verticalseparator = " vertical-separator";
 ?>
 
+<!-- <style> .custom_category {display: none;} </style> -->
+
 <div class="category-view">
 
 <?php
