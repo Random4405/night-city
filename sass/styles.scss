@@ -2,12 +2,7 @@ html {
   font-size: 100%;
 }
 
-body, .header-menu {
-  min-width: 480px;
-}
-
 .clear {
-  clear: both;
   width: 100%;
   height: 0;
   border: none;
@@ -18,14 +13,6 @@ body, .header-menu {
 
 body {
   background-color: #ecedf1;
-}
-
-.custom_form_text {
-  color: #ffffff;
-  font-family: Oswald;
-  font-size: 17px;
-  font-weight: 300;
-  text-align: center;
 }
 
 .header-main {
@@ -119,6 +106,7 @@ body {
 .question--background {
   background: url("../images/question-bg.png") no-repeat;
   margin-top: 100px;
+  background-size: cover;
 }
 
 .question--background-black {
@@ -165,6 +153,7 @@ body {
           &:hover {
             border: 7px solid #ffffff;
             background-color: rgba(141, 196, 231, 0.25);
+
             > a {
               text-decoration: underline;
             }
@@ -189,7 +178,6 @@ body {
             font-family: Oswald;
             font-size: 1.56rem;
             font-weight: 700;
-
           }
         }
       }
@@ -290,7 +278,10 @@ body {
 }
 
 .moduletable_question {
-  height: 293px;
+  min-height: min-content;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  padding-bottom: 20px;
   position: relative;
 
   h3 {
@@ -304,21 +295,32 @@ body {
 
   .qlform_question {
     form {
-      margin: 0 auto;
-      width: 965px;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: center;
+    }
+
+    .custom_form_text {
+      color: #ffffff;
+      font-family: Oswald;
+      font-size: 17px;
+      font-weight: 300;
+      text-align: center;
+      flex-basis: 100%;
+      margin: 10px 0 15px;
     }
 
     fieldset {
       border: none;
       float: left;
+      flex-grow: 1;
 
       label {
         font-size: 0;
       }
 
       input {
-        width: 300px;
-        height: 45px;
         border: none;
         background-color: #ecedf1;
         color: #b7b7b7;
@@ -326,25 +328,22 @@ body {
         font-size: 1.56rem;
         font-weight: 300;
         padding-left: 10px;
+        width: 100%;
+        height: 3rem;
       }
     }
-  }
 
-  .submit {
-    .controls {
-      position: absolute;
-      bottom: 26px;
-      left: calc(50% - 170px);
-
-      button {
-        width: 340px;
-        height: 60px;
-        border: 3px solid #ffffff;
-        background-color: #00a1b1;
-        color: #ffffff;
-        font-family: Oswald;
-        font-size: 1.875rem;
-        font-weight: 500;
+    .submit {
+      .controls {
+        button {
+          padding: 2.8% 21%;
+          border: 3px solid #ffffff;
+          background-color: #00a1b1;
+          color: #ffffff;
+          font-family: Oswald;
+          font-size: 1.875rem;
+          font-weight: 500;
+        }
       }
     }
   }

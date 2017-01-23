@@ -5,5 +5,5 @@ jQuery( document ).ready(function( $ ) {
 	$(".qlform_question input#jform_email").attr("placeholder", $(".qlform_question label#jform_email-lbl").text().replace(/(^\s+|\s+$)/g,''));
 
   $(".moduletable_question--catalog h3").text("Не нашли нужный продукт? Закажите звонок оператора!");
-  $("#fieldset3").append('<div class="custom_form_text">Поля отмеченные звёздочкой (*) обязательны для заполнения</div>')
+  $("#fieldset3").after('<div class="custom_form_text">Поля отмеченные звёздочкой (*) обязательны для заполнения</div>')
 });
