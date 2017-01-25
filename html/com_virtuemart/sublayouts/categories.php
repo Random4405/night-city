@@ -3,7 +3,7 @@
 *
 * Shows the products/categories of a category
 *
-* @package	VirtueMart
+* @package  VirtueMart
 * @subpackage
 * @author Max Milbers
 * @link http://www.virtuemart.net
@@ -36,8 +36,6 @@ $category_cellwidth = ' width'.floor ( 100 / $categories_per_row );
 $verticalseparator = " vertical-separator";
 ?>
 
-<!-- <style> .custom_category {display: none;} </style> -->
-
 <div class="category-view">
 
 <?php
@@ -45,13 +43,13 @@ $verticalseparator = " vertical-separator";
 // Start the Output
     foreach ( $categories as $category ) {
 
-	    // Show the horizontal seperator
-	    if ($iCol == 1 && $iCategory > $categories_per_row) { ?>
-	    <!-- <div class="horizontal-separator"></div> -->
-	    <?php }
+      // Show the horizontal seperator
+      if ($iCol == 1 && $iCategory > $categories_per_row) { ?>
+      <div class="horizontal-separator"></div>
+      <?php }
 
-	    // this is an indicator wether a row needs to be opened or not
-	    if ($iCol == 1) { ?>
+      // this is an indicator wether a row needs to be opened or not
+      if ($iCol == 1) { ?>
   <div class="row">
         <?php }
 
@@ -66,60 +64,38 @@ $verticalseparator = " vertical-separator";
         $caturl = JRoute::_ ( 'index.php?option=com_virtuemart&view=category&virtuemart_category_id=' . $category->virtuemart_category_id , FALSE);
 
           // Show Category ?>
-    <div class="category col-sm-12 col-md-6 floatleft<?php echo $category_cellwidth . $show_vertical_separator ?>">
+    <div class="category floatleft<?php echo $category_cellwidth . $show_vertical_separator ?>">
       <div class="spacer">
         <h2>
           <a href="<?php echo $caturl ?>" title="<?php echo vmText::_($category->category_name) ?>">
-            <div class="custom_highlight_block">
-              <?php
-                $names = array("ГСО",
-                               "Лабораторная посуда",
-                               "Питательные среды",
-                               "Стандарт титры",
-                               "Тесты для контроля стерилизации",
-                               "Химические реактивы"
-                              );
-                $links_of_icons = array("http://" . $_SERVER['SERVER_NAME'] . "/images/icon-gso.png",
-                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-lab.png",
-                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-pit.png",
-                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-sta.png",
-                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-tes.png",
-                                        "http://" . $_SERVER['SERVER_NAME'] . "/images/icon-him.png",
-                                       );
-              ?>
-               <?php for ($i = 1; $i <= 6; $i++) {
-                  if ($names[$i-1] == $category->category_name) {
-                    echo "<img src='" . $links_of_icons[$i-1] . "' class='custom_category_icon'>";
-                  }
-                } ?>
-              <div class="custom_category_name"><?php echo vmText::_($category->category_name) ?></div>
-            </div>
-            <?php // if ($category->ids) {
-              echo $category->images[0]->displayMediaFull("",false);
-              // if(isset($category->images[1])) { echo $category->images[1]->displayMediaFull("",false); }
-            //} ?>
+          <div class="subcategory_title_wrapper">
+            <div class="custom_subcategory_title"><?php echo vmText::_($category->category_name) ?></div>
+          </div>
+          <?php // if ($category->ids) {
+            echo $category->images[0]->displayMediaFull("",false);
+          //} ?>
           </a>
         </h2>
       </div>
     </div>
-	    <?php
-	    $iCategory ++;
+      <?php
+      $iCategory ++;
 
-	    // Do we need to close the current row now?
+      // Do we need to close the current row now?
         if ($iCol == $categories_per_row) { ?>
     <div class="clear"></div>
-	</div>
-		    <?php
-		    $iCol = 1;
-	    } else {
-		    $iCol ++;
-	    }
+  </div>
+        <?php
+        $iCol = 1;
+      } else {
+        $iCol ++;
+      }
     }
-	// Do we need a final closing row tag?
-	if ($iCol != 1) { ?>
-		<div class="clear"></div>
-	</div>
-	<?php
-	}
-	?></div><?php
+  // Do we need a final closing row tag?
+  if ($iCol != 1) { ?>
+    <div class="clear"></div>
+  </div>
+  <?php
+  }
+  ?></div><?php
  } ?>
