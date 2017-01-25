@@ -6,4 +6,7 @@ jQuery( document ).ready(function( $ ) {
 
   $(".moduletable_question--catalog h3").text("Не нашли нужный продукт? Закажите звонок оператора!");
   $("#fieldset3").after('<div class="custom_form_text">Поля отмеченные звёздочкой (*) обязательны для заполнения</div>')
+  $(".search_button").click(function (){
+    $(".moduletable_main_search").toggleClass("visible");
+  });
 });

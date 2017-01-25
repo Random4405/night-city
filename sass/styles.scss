@@ -15,6 +15,17 @@ body {
   background-color: #ecedf1;
 }
 
+.moduletable_main_search {
+  float: right;
+  background-color: #545553;
+  padding: 20px;
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 .header-main {
   .main-logo {
     padding: 38px 71px 46px 0px;
