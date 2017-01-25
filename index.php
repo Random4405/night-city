@@ -99,7 +99,9 @@ defined('_JEXEC') or die;
     </section>
 
     <footer>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.7753059736306!2d27.676194014811585!3d53.953498690111275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc931e5c8f25b%3A0x851ce23056ad5f94!2z0YPQuy4g0JvQvtC_0LDRgtC40L3QsCA3LCDQmtC-0L_QuNGJ0LU!5e0!3m2!1sru!2sby!4v1484312120668" width="50%" height="427" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="google_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.7753059736306!2d27.676194014811585!3d53.953498690111275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc931e5c8f25b%3A0x851ce23056ad5f94!2z0YPQuy4g0JvQvtC_0LDRgtC40L3QsCA3LCDQmtC-0L_QuNGJ0LU!5e0!3m2!1sru!2sby!4v1484312120668" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
       <div class="footer__contacts">
         <div class="footer__contacts--title">Звоните и приезжайте</div>
         <p>Тел.: +375 22 333-44-55</p>
