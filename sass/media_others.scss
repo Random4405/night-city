@@ -177,6 +177,72 @@
   }
 }
 
+/* Product page */
+
+.spacer.product-container {
+  border: 7px solid transparent;
+  margin: 2px;
+  &:hover {
+    border: 7px solid #00a0b0;
+    h2 a {
+      text-decoration: none;
+    }
+  }
+}
+
+.product-container {
+  .browseProductImage {
+    max-height: 100%;
+    img {
+    }
+  }
+  .vm-product-rating-container {
+    display: none;
+  }
+  .vm-product-descr-container-0 {
+    h2 {
+      text-align: left;
+      margin: 0 0 10px 35px;
+      a {
+        color: #707070;
+        font-family: Oswald;
+        font-size: 15px;
+        font-weight: 300;
+        text-decoration: underline;
+
+      }
+    }
+  }
+  .vm3pr-0 {
+    display: none;
+  }
+  .vm-details-button a {
+    width: 190px;
+    height: 38px;
+    border: 2px solid #7d7d7d;
+    border-radius: 0;
+    margin-bottom: 15px;
+    color: #545553;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 300;
+
+  }
+  .custom_product_popup_button_wrapper {
+    text-align: center;
+    button {
+      width: 190px;
+      height: 38px;
+      background-color: #00a0b0;
+      border: none;
+      color: #545553;
+      font-family: Oswald;
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+}
+
 
 /*==========  Non-Mobile First Method  ==========*/
 

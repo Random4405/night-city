@@ -86,7 +86,7 @@ foreach ($viewData['products'] as $type => $products ) {
 
 					<a title="<?php echo $product->product_name ?>" href="<?php echo $product->link.$ItemidStr; ?>">
 						<?php
-						echo $product->images[0]->displayMediaThumb('class="browseProductImage"', false);
+						echo $product->images[0]->displayMediaFull('class="browseProductImage"', false);
 						?>
 					</a>
 
@@ -132,6 +132,9 @@ foreach ($viewData['products'] as $type => $products ) {
 				echo JHtml::link($link.$ItemidStr,vmText::_ ( 'COM_VIRTUEMART_PRODUCT_DETAILS' ), array ('title' => $product->product_name, 'class' => 'product-details' ) );
 				//echo JHtml::link ( JRoute::_ ( 'index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=' . $product->virtuemart_product_id . '&virtuemart_category_id=' . $product->virtuemart_category_id , FALSE), vmText::_ ( 'COM_VIRTUEMART_PRODUCT_DETAILS' ), array ('title' => $product->product_name, 'class' => 'product-details' ) );
 				?>
+			</div>
+			<div class="custom_product_popup_button_wrapper">
+				<button>Добавить в заявку</button>
 			</div>
 		<?php if(vRequest::getInt('dynamic')){
 			echo vmJsApi::writeJS();
