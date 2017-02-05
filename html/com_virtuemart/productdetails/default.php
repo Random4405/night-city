@@ -112,25 +112,32 @@ if(vRequest::getInt('print',false)){ ?>
     		?>
     	</div>
 
-    	<?php // Product Title   ?>
-    	<h1 itemprop="name"><?php echo $this->product->product_name ?></h1>
-    	<?php // Product Title END   ?>
+      <div class="product-info">
 
-    	<?php
+        <?php // Product Title   ?>
+          <h1 itemprop="name"><?php echo $this->product->product_name ?></h1>
+        <?php // Product Title END   ?>
 
-    	    // Product Short Description
-    	if (!empty($this->product->product_s_desc)) {
-    		?>
-    		<div class="product-short-description">
-    			<?php
-    			/** @todo Test if content plugins modify the product description */
-    			echo nl2br($this->product->product_s_desc);
-    			?>
-    		</div>
-    		<?php
-    } // Product Short Description END
+        <?php   // Product Short Description
+        if (!empty($this->product->product_s_desc)) {
+          ?>
+          <div class="product-short-description">
+            <?php
+            /** @todo Test if content plugins modify the product description */
+            echo nl2br($this->product->product_s_desc);
+            ?>
+          </div>
+          <?php
+      } // Product Short Description END ?>
 
-    ?>
+        <div class="custom_product_popup_button_wrapper">
+          <a href="">Добавить в заявку</a>
+        </div>
+
+      </div>
+
+
+
 
     	<div class="vm-product-details-container">
     		<div class="spacer-buy-area">
@@ -224,7 +231,7 @@ if (!empty($this->product->product_desc)) {
     	</div>
     	<?php } // Product Packaging END ?>
 
-    	<?php 
+    	<?php
     	echo shopFunctionsF::renderVmSubLayout('customfields',array('product'=>$this->product,'position'=>'onbot'));
 
     	echo shopFunctionsF::renderVmSubLayout('customfields',array('product'=>$this->product,'position'=>'related_products','class'=> 'product-related-products','customTitle' => true ));

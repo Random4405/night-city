@@ -134,7 +134,7 @@ foreach ($viewData['products'] as $type => $products ) {
 				?>
 			</div>
 			<div class="custom_product_popup_button_wrapper">
-				<button>Добавить в заявку</button>
+				<a href="">Добавить в заявку</a>
 			</div>
 		<?php if(vRequest::getInt('dynamic')){
 			echo vmJsApi::writeJS();

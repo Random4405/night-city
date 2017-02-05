@@ -2,10 +2,6 @@ html {
   font-size: 100%;
 }
 
-div {
-  border: 1px solid green;
-}
-
 .clear {
   width: 100%;
   height: 0;
@@ -31,9 +27,11 @@ body {
 }
 
 .moduletable_breadcumbs {
-  margin-left: 25%;
-  ul li {
-    margin-right: 3px;
+  ul {
+    padding-left: 0;
+    li {
+      margin-right: 3px;
+    }
   }
 }
 
