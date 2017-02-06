@@ -131,7 +131,7 @@ if(vRequest::getInt('print',false)){ ?>
       } // Product Short Description END ?>
 
         <div class="custom_product_popup_button_wrapper">
-          <a href="">Добавить в заявку</a>
+          <a href="#">Добавить в заявку</a>
         </div>
 
       </div>

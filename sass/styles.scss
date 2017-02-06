@@ -404,6 +404,18 @@ footer {
       font-size: 0.9rem;
       line-height: 33px;
     }
+
+    .footer__media {
+      .media_fb, .media_vk, .media_inst {
+        float: left;
+        margin-right: 20px;
+        width: 33px;
+        height: 32px;
+      }
+      .media_fb { background: url(../images/social-icons.png) no-repeat 0px 0px; }
+      .media_vk { background: url(../images/social-icons.png) no-repeat -56px 0px; }
+      .media_inst { background: url(../images/social-icons.png) no-repeat -113px 0px; }
+    }
   }
 
   .copyright {

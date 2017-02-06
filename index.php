@@ -22,7 +22,28 @@ defined('_JEXEC') or die;
     <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery-1.9.1.min.js" type="text/javascript" ></script>
     <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/easySlider1.7.js" type="text/javascript" ></script>
     <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.fancybox.pack.js" type="text/javascript" ></script>
+    <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/jquery.scrollUp.js" type="text/javascript" ></script>
     <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/js/script.js" type="text/javascript" ></script>
+    <script type="text/javascript">
+      $(function () {
+          $.scrollUp({
+              scrollName: 'scrollUp',      // Element ID
+              scrollDistance: 300,         // Distance from top/bottom before showing element (px)
+              scrollFrom: 'top',           // 'top' or 'bottom'
+              scrollSpeed: 300,            // Speed back to top (ms)
+              easingType: 'linear',        // Scroll to top easing (see http://easings.net/)
+              animation: 'fade',           // Fade, slide, none
+              animationSpeed: 200,         // Animation speed (ms)
+              scrollTrigger: false,        // Set a custom triggering element. Can be an HTML string or jQuery object
+              scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
+              scrollText: 'Scroll to top', // Text for element, can contain HTML
+              scrollTitle: false,          // Set a custom <a> title if required.
+              scrollImg: false,            // Set true to use image
+              activeOverlay: true,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+              zIndex: 2147483647           // Z-Index for the overlay
+          });
+      });
+    </script>
   </head>
 
   <body>
@@ -113,7 +134,11 @@ defined('_JEXEC') or die;
         <p>Email:  admin@youremail.com</p>
         <p>г. Минск</p>
         <p>ул. Лопатина, 7, оф. 902</p>
-        <div class="footer__media"></div>
+        <div class="footer__media">
+          <a href="#"><div class="media_fb"></div></a>
+          <a href="#"><div class="media_vk"></div></a>
+          <a href="#"><div class="media_inst"></div></a>
+        </div>
       </div>
       <div class="copyright">© Высокий город.</div>
     </footer>

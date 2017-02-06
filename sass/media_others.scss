@@ -10,6 +10,16 @@
   }
 }
 
+.category_description h1 {
+  font-family: Oswald;
+}
+
+.category_description ol li {
+  font-size: 1rem;
+  font-family: Oswald;
+  font-weight: 300;
+}
+
 .header-main .header-menu {
   position: relative;
   background-color: transparent;
@@ -28,7 +38,7 @@
   }
 }
 
-.page-header h1, .browse-view h1, .orderby-displaynumber {
+.page-header h1, .browse-view h1, .orderby-displaynumber, .virtuemart_search {
   display: none;
 }
 
@@ -157,7 +167,7 @@
         line-height: 43px;
       }
       &.current {
-        height: 41px;
+        // height: 41px;
         background-color: #d7d7d7;
       }
     }
@@ -247,7 +257,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 190px;
+    max-width: 190px;
+    width: 100%;
     height: 38px;
     margin-bottom: 15px;
     border: 2px solid #7d7d7d;
@@ -273,7 +284,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 190px;
+    max-width: 190px;
+    width: 100%;
     height: 38px;
     background-color: #00a0b0;
     &:hover {

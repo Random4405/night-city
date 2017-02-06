@@ -197,6 +197,10 @@
       padding-left: 6px;
       margin-top: 0;
 
+      a {
+        font-size: 1.18rem;
+      }
+
       .img-wrapper {
         height: 149px;
         position: relative;
@@ -277,27 +281,30 @@
       width: 100%;
       display: inline-block;
       li {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
         float: none;
         width: 100%;
         height: auto;
         @include clearfix;
         a {
-          flex-basis: 30%;
-        }
-        .clear {
-          flex-basis: 0%;
-        }
-        .img-wrapper {
-          flex-basis: 30%;
-          height: auto;
-          position: relative;
-          margin-bottom: 0;
-          img {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
+          p {
+            flex-basis: 30%;
+          }
+          .clear {
+            flex-basis: 0%;
+          }
+          .img-wrapper {
+            flex-basis: 30%;
+            height: auto;
             position: relative;
-            float: right;
+            margin-bottom: 0;
+            img {
+              position: relative;
+              float: right;
+            }
           }
         }
       }
