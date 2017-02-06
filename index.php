@@ -26,6 +26,10 @@ defined('_JEXEC') or die;
   </head>
 
   <body>
+  <div class="popup-form">
+    <div class="popup-form-bg"></div>
+    <jdoc:include type="modules" name="popup-form" style="xhtml" />
+  </div>
     <header class="header-main">
       <div class="container">
         <div class="row">

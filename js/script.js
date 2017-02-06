@@ -9,4 +9,8 @@ jQuery( document ).ready(function( $ ) {
   $(".search_button").click(function (){
     $(".moduletable_main_search").toggleClass("visible");
   });
+
+  $(".header-contacts__button, .popup-form-bg, .custom_product_popup_button_wrapper").click(function (){
+    $(".popup-form").toggleClass("visible");
+  });
 });

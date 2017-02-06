@@ -25,5 +25,6 @@
 		<position>form</position>
 		<position>left-sidebar</position>
 		<position>pre-content</position>
+		<position>popup-form</position>
 	</positions>
 </extension>
