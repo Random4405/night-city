@@ -38,8 +38,8 @@ defined('_JEXEC') or die;
               scrollTarget: false,         // Set a custom target element for scrolling to. Can be element or number
               scrollText: 'Scroll to top', // Text for element, can contain HTML
               scrollTitle: false,          // Set a custom <a> title if required.
-              scrollImg: false,            // Set true to use image
-              activeOverlay: true,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+              scrollImg: true,            // Set true to use image
+              activeOverlay: false,        // Set CSS color to display scrollUp active point, e.g '#00FFFF'
               zIndex: 2147483647           // Z-Index for the overlay
           });
       });
@@ -47,6 +47,7 @@ defined('_JEXEC') or die;
   </head>
 
   <body>
+  <div id="scrollUp"></div>
   <div class="popup-form">
     <div class="popup-form-bg"></div>
     <jdoc:include type="modules" name="popup-form" style="xhtml" />

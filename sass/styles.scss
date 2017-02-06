@@ -2,6 +2,11 @@ html {
   font-size: 100%;
 }
 
+body *::selection {
+  background: rgba(0, 160, 176, 0.8);
+  color: white;
+}
+
 .clear {
   width: 100%;
   height: 0;
@@ -9,6 +14,11 @@ html {
   clear: both;
   margin: 0;
   padding: 0;
+}
+
+a.disabled {
+    pointer-events: none; /* делаем ссылку некликабельной */
+    cursor: default;  /* устанавливаем курсор в виде стрелки */
 }
 
 body {
@@ -384,12 +394,12 @@ footer {
   .google_map, .footer__contacts {
     float: left;
     width: 50%;
+    height: 427px;
   }
 
   .footer__contacts {
     padding: 60px 0 0 100px;
     background-color: #545553;
-    height: 427px;
     font-family: Oswald;
     font-weight: 300;
 
@@ -456,4 +466,13 @@ footer {
     z-index: 1001;
     font-family: Open Sans Condensed !important;
   }
+}
+
+#scrollUp {
+  display: none;
+  bottom: 20px;
+  right: 95px;
+  padding: 31px 31px;
+  color: #fff;
+  background: url(../images/scroll-up.png) no-repeat;
 }
