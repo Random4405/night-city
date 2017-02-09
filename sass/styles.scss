@@ -495,18 +495,27 @@ footer {
     font-family: Oswald;
     font-size: 1.5rem;
     font-weight: 200;
+    width: 382px;
+  }
+
+  input {
+    height: 54px;
+  }
+
+  textarea {
+    height: 153px;
   }
 
   fieldset {
     border: none;
-    margin: 0 60px 60px 60px;
+    margin: 0 60px 0 60px;
     padding: 0;
   }
 
   button {
     border: none;
-    max-width: 382px;
-    max-height: 54px;
+    width: 382px;
+    height: 54px;
     background-color: #16a2b2;
     color: #ffffff;
     font-family: Oswald;
@@ -514,7 +523,8 @@ footer {
     font-weight: 500;
     padding-left: 80px;
     padding-right: 80px;
-    margin: 0 auto;
+    margin-left: 60px;
+    margin-bottom: 30px;
   }
 
   .popup-form-bg {
