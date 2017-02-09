@@ -474,6 +474,16 @@ footer {
   display: none;
   // display: flex;
   justify-content: center;
+  span.popup_close_button {
+    z-index: 9999;
+    background:transparent url('../images/popup_close.png') left top no-repeat;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5vh;
+    left: 220px;
+    margin-top: 25px;
+  }
   h3 {
     color: #16a2b2;
     font-family: Oswald;
