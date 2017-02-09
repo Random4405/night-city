@@ -64,6 +64,13 @@ defined('_JEXEC') or die;
             <jdoc:include type="modules" name="header-menu" style="xhtml" />
           </div>
         </div>
+        <div class="moduletable_main_search">
+          <div class="container">
+            <div class="row">
+              <jdoc:include type="modules" name="header-search" style="xhtml" />
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -130,9 +137,9 @@ defined('_JEXEC') or die;
       </div>
       <div class="footer__contacts">
         <div class="footer__contacts--title">Звоните и приезжайте</div>
-        <p>Тел.: +375 22 333-44-55</p>
-        <p>Факс: +375 22 333-44-55</p>
-        <p>Email:  admin@youremail.com</p>
+        <p><a href="tel:+375172757501" style="color: #f3f6f7">Тел.: +375 17 275-75-01</a></p>
+        <p><a href="tel:+375172757501" style="color: #f3f6f7">Факс: +375 17 275-75-01</a></p>
+        <p><a href="mailto:highcity@mail.ru" style="color: #f3f6f7">E-mail - highcity@mail.ru</a></p>
         <p>г. Минск</p>
         <p>ул. Лопатина, 7, оф. 902</p>
         <div class="footer__media">

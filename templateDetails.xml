@@ -26,5 +26,6 @@
 		<position>left-sidebar</position>
 		<position>pre-content</position>
 		<position>popup-form</position>
+		<position>header-search</position>
 	</positions>
 </extension>
