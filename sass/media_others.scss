@@ -61,6 +61,23 @@
   }
 }
 
+.intro--background {
+  display: none;
+}
+
+.moduletable_main_search {
+  background: none;
+  .search_main_search_wrapper {
+    display: flex;
+    justify-content: center;
+    input {
+      border: 1px solid #545553;
+      width: 30%;
+    }
+  }
+
+}
+
 .page-header h1, .browse-view h1, .orderby-displaynumber, .virtuemart_search {
   display: none;
 }
@@ -80,6 +97,13 @@
 .blog {
   .item-image {
     margin-right: 20px;
+  }
+}
+
+.contacts_wrapper {
+  display: flex;
+  justify-content: space-between;
+  .contacts_info {
   }
 }
 

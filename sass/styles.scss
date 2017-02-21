@@ -1,3 +1,5 @@
+@import 'fix';
+
 html {
   font-size: 100%;
 }
@@ -6,6 +8,8 @@ body *::selection {
   background: rgba(0, 160, 176, 0.8);
   color: white;
 }
+
+
 
 .clear {
   width: 100%;
@@ -24,6 +28,7 @@ a.disabled {
 body {
   background-color: #ecedf1;
   font-family: Oswald;
+  font-size: inherit;
   a, a:hover, a:focus {
     color: #00a0b0;
   }
@@ -470,21 +475,22 @@ footer {
     padding: 28px 0 0 208px;
   }
 }
-
 .popup-form {
   display: none;
   // display: flex;
   justify-content: center;
   span.popup_close_button {
+    cursor: pointer;
     z-index: 9999;
     background:transparent url('../images/popup_close.png') left top no-repeat;
-    width: 25px;
-    height: 25px;
-    position: relative;
-    top: 5vh;
-    left: 220px;
+    width: 25px !important;
+    height: 25px !important;
+    position: absolute;
+    top: 0px;
+    right: 20px;
     margin-top: 25px;
   }
+
   h3 {
     color: #16a2b2;
     font-family: Oswald;
@@ -573,7 +579,13 @@ footer {
   background: url(../images/scroll-up.png) no-repeat;
 }
 
-div[itemprop="articleBody"] p {
+div[itemprop="articleBody"] {
+  ul li {
+    font-weight: 300;
+  }
+
+  p {
   font-weight: 300;
+  }
 }
 

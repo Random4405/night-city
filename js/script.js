@@ -17,11 +17,9 @@ jQuery( document ).ready(function( $ ) {
     $(".moduletable_main_search").toggleClass("visible");
   });
 
-  $(".header-contacts__button, .popup-form-bg, .custom_product_popup_button_wrapper, .popup-form:before").click(function (){
+  $('.moduletable_popup-form').prepend("<span class='popup_close_button'></span>")
+
+  $(".header-contacts__button, .popup-form-bg, .custom_product_popup_button_wrapper, span.popup_close_button").click(function(){
     $(".popup-form").toggleClass("visible_flex");
   });
-
-  $('.popup-form h3').prepend("<span class='popup_close_button'></span>")
-
-
 });
