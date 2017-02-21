@@ -137,18 +137,19 @@ defined('_JEXEC') or die;
       </div>
       <div class="footer__contacts">
         <div class="footer__contacts--title">Звоните и приезжайте</div>
-        <p><a href="tel:+375172757501" style="color: #f3f6f7">Тел.: +375 17 275-75-01</a></p>
-        <p><a href="tel:+375172757501" style="color: #f3f6f7">Факс: +375 17 275-75-01</a></p>
-        <p><a href="mailto:highcity@mail.ru" style="color: #f3f6f7">E-mail - highcity@mail.ru</a></p>
-        <p>г. Минск</p>
-        <p>ул. Лопатина, 7, оф. 902</p>
-        <div class="footer__media">
+        <p><a href="tel:+375445198240" style="color: #f3f6f7">Тел: +375 44 519-82-40</a></p>
+        <p><a href="tel:+375173365117" style="color: #f3f6f7">Тел/Факс: +375 17 336-51-17</a></p>
+        <p><a href="mailto:highcity@mail.ru" style="color: #f3f6f7">E-mail: highcity@mail.ru</a></p>
+        <p>220125, Минская область, Минский район, </p>
+        <p>Боровлянский с/с, деревня Копище</p>
+        <p>ул. Лопатина, 7, оф. 902 (Бизнес центр "Премьер")</p>
+        <!-- <div class="footer__media">
           <a href="#"><div class="media_fb"></div></a>
           <a href="#"><div class="media_vk"></div></a>
           <a href="#"><div class="media_inst"></div></a>
-        </div>
+        </div> -->
       </div>
-      <div class="copyright">© Высокий город.</div>
+      <div class="copyright">© 2017 Все права защищены. ООО "Высокий город". Оснащения химических, микробиологических лабораторий в Республике Беларусь.</div>
     </footer>
 
   </body>
