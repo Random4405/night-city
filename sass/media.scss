@@ -278,6 +278,14 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
 
+  .content .intro .intro__links-menu ul {
+    li {
+      a {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
   span.popup_close_button {
     right: 65px !important;
   }
